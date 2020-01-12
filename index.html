@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- 👍 YOUR HTML HERE 👍 -->
+
+    <img
+      id="inn"
+      src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/5d439363342369.5aad8199be7e8.jpg"
+      alt=""
+    />
+    <img
+      id="inn"
+      src="https://i.pinimg.com/736x/71/f3/da/71f3da326bdc64b6d37d4dadfbe89f9a.jpg"
+      alt=""
+    />
+    <img
+      id="dagger"
+      src="https://www.messen.nl/media/catalog/product/cache/31/image/9df78eab33525d08d6e5fb8d27136e95/0/2/02uc3336.jpg"
+      alt=""
+    />
+    <img id="bag" src="" alt="" />
+
+    <div><h1>test</h1></div>
+
+    <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+    <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+    <div id="mocha">
+      <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+    </div>
+
+    <script src="lib/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/sinon.js"></script>
+    <script>
+      mocha.setup('bdd');
+    </script>
+    <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+    <script src="lib/game_logic.test.js"></script>
+  </body>
+</html>
